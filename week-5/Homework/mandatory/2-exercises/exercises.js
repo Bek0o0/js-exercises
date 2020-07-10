@@ -38,15 +38,7 @@
  */
 function insertPeopleData(arrayOfPeople) {
   let content = document.querySelector("#content");
-
-  for (var i = 0; i < arrayOfPeople.length; i++) {
-    let Header1 = document.createElement("h1");
-    Header1.textContent = people[i].name;
-    content.appendChild(Header1);
-    let Header2 = document.createElement("h2");
-    Header2.textContent = people[i].job;
-    content.appendChild(Header2);
-  }
+  //Write your code in here
 }
 
 /**
@@ -59,14 +51,7 @@ function insertPeopleData(arrayOfPeople) {
  * Hint for type of lists in HTML: https://www.w3schools.com/html/html_lists.asp
  */
 function insertShoppingList(shoppingList) {
-  var TheDiv = document.getElementById("content");
-  var TheUl = document.createElement("ul");
-  for (var i = 0; i < shoppingList.length; i++) {
-    var TheLi = document.createElement("li");
-    TheLi.textContent = shoppingList[i];
-    TheUl.appendChild(TheLi);
-  }
-  TheDiv.appendChild(TheUl);
+  //Write your code in here
 }
 
 /**
@@ -83,43 +68,10 @@ function insertShoppingList(shoppingList) {
  *
  * All of your HTML elements should go inside the Div tag with the id "content".
  *
- * ...The end result should look something like this: https://hyf-js2-week1-makeme-ex1-demo.herokuapp.com
+ * The end result should look something like this: https://hyf-js2-week1-makeme-ex1-demo.herokuapp.com
  */
-
 function insertBooks(books) {
-  var TheImgLinks = [
-    "https://images-na.ssl-images-amazon.com/images/I/410RTQezHYL._SX326_BO1,204,203,200_.jpg",
-    "https://images-na.ssl-images-amazon.com/images/I/71HMyqG6MRL.jpg",
-    "https://images-na.ssl-images-amazon.com/images/I/418M2053aNL.jpg",
-  ];
-
-  var TheULs = document.createElement("ul");
-  var TheDiv = document.getElementById("content");
-
-  for (var i = 0; i < books.length; i++) {
-    var TheLis = document.createElement("li");
-    var ThePs = document.createElement("p");
-    var Imgs = document.createElement("img");
-    Imgs.style.height = "200px";
-    Imgs.style.width = "180px";
-    Imgs.style.margin = "10px";
-
-    Imgs.src = TheImgLinks[i];
-    ThePs.textContent = books[i].title + " - " + books[i].author;
-    TheLis.appendChild(ThePs);
-    TheLis.appendChild(Imgs);
-    TheLis.style.margin = "16px";
-    TheLis.style.listStyleType = "none";
-    TheULs.appendChild(TheLis);
-    TheULs.style.display = "flex";
-
-    TheDiv.appendChild(TheULs);
-    if (books[i].alreadyRead == true) {
-      TheLis.style.backgroundColor = "green";
-    } else {
-      TheLis.style.backgroundColor = "red";
-    }
-  }
+  //Write your code in here
 }
 
 //

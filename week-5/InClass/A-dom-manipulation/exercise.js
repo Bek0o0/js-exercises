@@ -59,12 +59,13 @@ Task 4
 When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
 */
 const addNew = document.getElementById("addTextBtn");
+var TheDiv = document.querySelector("div .buttons");
 addNew.addEventListener("click", function () {
   const para = document.createElement("p");
   const theText = document.createTextNode("Read more below.");
   para.appendChild(theText);
 
-  addNew.appendChild(para);
+  TheDiv.appendChild(para);
 });
 
 /*

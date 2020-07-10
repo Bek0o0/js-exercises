@@ -16,7 +16,11 @@
         simon.greeting()
     ```
 
+<<<<<<< HEAD
     When you run this code using `node 2-convertion.js` you should be able to
+=======
+    When you run this code using `node 2-convertion.js`, what should you see?
+>>>>>>> e15d669e2e78b26b816181101842bf2137b17fd5
     
 
 */
